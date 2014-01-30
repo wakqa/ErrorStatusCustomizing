@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
+	<group ID="01000000000000000000000000000000" name="Admin">
+		<include user="admin" ID="D5EE5C8FAA1AF9418115268ADD11014B"/>
+	</group>
+	<user ID="D5EE5C8FAA1AF9418115268ADD11014B" name="admin" fullName="" password="003b744708c16733d1eb3371bec208fd"/>
+</directory>
