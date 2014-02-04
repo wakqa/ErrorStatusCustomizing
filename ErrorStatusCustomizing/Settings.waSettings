@@ -11,8 +11,13 @@
 	<service name="upload" modulePath="services/upload" enabled="true" autoStart="true"/>
 	<service name="Git HTTP Service" modulePath="services/waf-git/waf-GitService" enabled="true"/>
 	<service name="Builder handler" modulePath="services/builder-service" enabled="true" max-age="0" hardCache="false"/>
+	<service name="remoteFileExplorer"/>
+	<service name="Print service" modulePath="services/print"/>
+
+	<resources location="/walib/" lifeTime="31536000"/>
+	<resources location="/401.waPage/" allow="GET,HEAD" disallow="POST,PUT,DELETE" group="testGroup" authType="CUSTOM" realm="Basic Realm"/>
+	<resources location="/provokeError401/" allow="GET,HEAD" disallow="POST,PUT,DELETE" group="all" authType="CUSTOM" realm="Custom Realm"/>
 	<virtualFolder location="/WIDGETS_CUSTOM/" name="widgets-custom"/>
 	<virtualFolder location="/THEMES_CUSTOM/" name="themes-custom"/>
-	<resources location="/walib/" lifeTime="31536000"/>
 	<javaScript reuseContexts="true"/>
 </settings>
